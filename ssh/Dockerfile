@@ -1,4 +1,5 @@
-# Just a duplicate of https://github.com/containers/bootc/blob/main/docs/install.md#injecting-ssh-keys-in-a-container-image except with *my* SSH key
+# Just a duplicate of https://github.com/containers/bootc/blob/main/docs/install.md#injecting-ssh-keys-in-a-container-image except with *my* SSH key.
+# This should be available as quay.io/cgwalters/walters-c9s-oscore-ssh
 FROM ghcr.io/cgwalters/c9s-oscore
 RUN mkdir -p /usr/etc-system/ && \
     echo 'AuthorizedKeysFile /usr/etc-system/%u.keys' >> /etc/ssh/sshd_config.d/30-auth-system.conf && \
